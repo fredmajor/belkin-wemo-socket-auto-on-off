@@ -1,0 +1,15 @@
+[Unit]
+Description=Sound card activity monitor
+After=network.target
+Requires=network.target
+
+ 
+[Install]
+WantedBy=multi-user.target
+ 
+[Service]
+Type=simple
+User=alarm
+Group=alarm
+ExecStart=/home/alarm/bin/monitorSoundcard.sh
+

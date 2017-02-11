@@ -1,0 +1,9 @@
+[Unit]
+Description=Scan belkin daily
+
+[Timer]
+OnCalendar=daily
+Persistent=false    
+ 
+[Install]
+WantedBy=timers.target
